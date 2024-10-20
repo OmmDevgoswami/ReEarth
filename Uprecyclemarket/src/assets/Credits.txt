@@ -3,3 +3,7 @@ recycle : <a href="https://www.flaticon.com/free-icons/scrap" title="scrap icons
 home : <a href="https://www.flaticon.com/free-icons/green-house" title="green-house icons">Green-house icons created by Andika Syaif - Flaticon</a>
 home2 : <a href="https://www.flaticon.com/free-icons/ecology-and-environment" title="ecology-and-environment icons">Ecology-and-environment icons created by Freepik - Flaticon</a>
 market : <a href="https://www.flaticon.com/free-icons/expand" title="expand icons">Expand icons created by noomtah - Flaticon</a>
+dashboard : <a href="https://www.flaticon.com/free-icons/panel" title="panel icons">Panel icons created by Vectors Tank - Flaticon</a>
+user : <a href="https://www.flaticon.com/free-animated-icons/ui" title="ui animated icons">Ui animated icons created by Freepik - Flaticon</a>
+login : <a href="https://www.flaticon.com/free-icons/login" title="login icons">Login icons created by HJ Studio - Flaticon</a>
+logo : <a href="https://www.flaticon.com/free-animated-icons/ecosystem" title="ecosystem animated icons">Ecosystem animated icons created by Freepik - Flaticon</a>

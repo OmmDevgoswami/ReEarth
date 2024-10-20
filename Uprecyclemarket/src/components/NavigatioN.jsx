@@ -27,11 +27,11 @@ export default function Navigation() {
           Sell Scrap
         </Button>
         <Button color="inherit" component={RouterLink} to="/dashboard" sx={{ marginRight: 2 }}>
-          <DashboardIcon sx={{ marginRight: 1 }} />
+          <img src="./src/assets/dashboard.png" alt="Logo" style={{ width: 24, height: 24, marginRight: 8 }} />
           Dashboard
         </Button>
         <Button color="inherit" component={RouterLink} to="/profile">
-          <PersonIcon sx={{ marginRight: 1 }} />
+          <img src="./src/assets/login.png" alt="Logo" style={{ width: 24, height: 24, marginRight: 8 }} />
           Profile
         </Button>
       </Toolbar>
