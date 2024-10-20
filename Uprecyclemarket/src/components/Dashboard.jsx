@@ -82,7 +82,7 @@ export default function Dashboard() {
               <Typography variant="h6" gutterBottom fontWeight="bold">Quick Actions</Typography>
               <Grid container spacing={2}>
                 <Grid item xs={6}>
-                  <Button variant="outlined" color="secondary" fullWidth startIcon={<Assessment />}>
+                  <Button variant="outlined" color="white" fullWidth startIcon={<Assessment />}>
                     Reports
                   </Button>
                 </Grid>

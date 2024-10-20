@@ -24,8 +24,8 @@ export default function ProfilePage() {
                 src="/placeholder.svg?height=150&width=150"
                 sx={{ width: 150, height: 150, mx: 'auto', mb: 2, border: '4px solid #4caf50' }}
               />
-              <Typography variant="h5" gutterBottom>John Doe</Typography>
-              <Typography variant="body1" color="text.secondary" gutterBottom>john.doe@example.com</Typography>
+              <Typography variant="h5" gutterBottom>xyz</Typography>
+              <Typography variant="body1" color="text.secondary" gutterBottom>xyz@example.com</Typography>
               <Button variant="contained" color="primary" startIcon={<Edit />} sx={{ mt: 2 }}>
                 Edit Profile
               </Button>
@@ -50,7 +50,7 @@ export default function ProfilePage() {
               <Typography variant="h6" gutterBottom>Account Information</Typography>
               <List>
                 <ListItem>
-                  <ListItemText primary="Member Since" secondary="January 1, 2023" />
+                  <ListItemText primary="Member Since" secondary="October 20, 2024" />
                   <Chip icon={<EmojiEvents />} label="Gold Recycler" color="primary" variant="outlined" />
                 </ListItem>
                 <Divider component="li" />

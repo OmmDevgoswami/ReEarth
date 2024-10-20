@@ -60,10 +60,10 @@ export default function ScrapCollectionPage() {
                     {step.icon}
                   </Box>
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div" align="center">
+                    <Typography gutterBottom variant="h5" component="div" align="center" color="white">
                       {step.title}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary" align="center">
+                    <Typography variant="body2" color="white" align="center">
                       {step.description}
                     </Typography>
                   </CardContent>

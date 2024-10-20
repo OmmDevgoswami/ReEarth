@@ -98,29 +98,56 @@ export default function HomePage() {
         </Grid>
 
         <Grid container spacing={4} sx={{ mt: 4 }}>
-          <Grid item xs={12} sm={4}>
-            <FeatureCard 
-              icon={<RecycleIcon sx={{ fontSize: 40, mb: 2, color: '#4caf50' }} />}
-              title="Easy Recycling"
-              description="Schedule pickups for recyclables right from your smartphone"
-            />
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <FeatureCard 
-              icon={<NatureIcon sx={{ fontSize: 40, mb: 2, color: 'black' }} />}
-              sx={{ bgcolor: '#ffd54f', color: 'black', '&:hover': { bgcolor: '#ffecb3' } }}
-              title="Environmental Impact"
-              description="Track your contribution to reducing carbon footprint"
-            />
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <FeatureCard 
-              icon={<SavingsIcon sx={{ fontSize: 40, mb: 2, color: '#4caf50' }} />}
-              title="Rewards Program"
-              description="Earn points and redeem eco-friendly products"
-            />
-          </Grid>
-        </Grid>
+  <Grid item xs={12} sm={4}>
+    <FeatureCard 
+      icon={<RecycleIcon sx={{ fontSize: 40, mb: 2, color: '#4caf50' }} />}
+      title="Easy Recycling"
+      description="Schedule pickups for recyclables right from your smartphone"
+      sx={{
+        bgcolor: '#333',
+        color: 'white',
+        transition: 'transform 0.3s ease-in-out',
+        '&:hover': { 
+          bgcolor: '#444',
+          transform: 'scale(0.95)'
+        }
+      }}
+    />
+  </Grid>
+  <Grid item xs={12} sm={4}>
+    <FeatureCard 
+      icon={<NatureIcon sx={{ fontSize: 40, mb: 2, color: '#4caf50' }} />}
+      title="Environmental Impact"
+      description="Track your contribution to reducing carbon footprint"
+      sx={{
+        bgcolor: '#333',
+        color: 'white',
+        transition: 'transform 0.3s ease-in-out',
+        '&:hover': { 
+          bgcolor: '#444',
+          transform: 'scale(0.95)'
+        }
+      }}
+    />
+  </Grid>
+  <Grid item xs={12} sm={4}>
+    <FeatureCard 
+      icon={<SavingsIcon sx={{ fontSize: 40, mb: 2, color: '#4caf50' }} />}
+      title="Rewards Program"
+      description="Earn points and redeem eco-friendly products"
+      sx={{
+        bgcolor: '#333',
+        color: 'white',
+        transition: 'transform 0.3s ease-in-out',
+        '&:hover': { 
+          bgcolor: '#444',
+          transform: 'scale(0.95)'
+        }
+      }}
+    />
+  </Grid>
+</Grid>
+
       </Container>
     </Box>
   );
