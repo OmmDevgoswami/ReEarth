@@ -15,15 +15,15 @@ export default function Navigation() {
           RecycleMarketplace
         </Typography>
         <Button color="inherit" component={RouterLink} to="/" sx={{ marginRight: 2 }}>
-          <img src="Uprecycle-Market/Uprecyclemarket/src/assets/home.png" alt="Logo" style={{ width: 24, height: 24, marginRight: 8 }} />
+          <img src="./src/assets/home.png" alt="Logo" style={{ width: 24, height: 24, marginRight: 8 }} />
           Home
         </Button>
         <Button color="inherit" component={RouterLink} to="/marketplace" sx={{ marginRight: 2 }}>
-          <img src="Uprecycle-Market/Uprecyclemarket/src/assets/market.png" alt="Market" style={{ width: 24, height: 24, marginRight: 8 }} />
+          <img src="./src/assets/market.png" alt="Market" style={{ width: 24, height: 24, marginRight: 8 }} />
           Marketplace
         </Button>
         <Button color="inherit" component={RouterLink} to="/scrap-collection" sx={{ marginRight: 2 }}>
-          <img src="Uprecycle-Market/Uprecyclemarket/src/assets/recycle.png" alt="Sell" style={{ width: 24, height: 24, marginRight: 8 }} />
+          <img src="./src/assets/recycle.png" alt="Sell" style={{ width: 24, height: 24, marginRight: 8 }} />
           Sell Scrap
         </Button>
         <Button color="inherit" component={RouterLink} to="/dashboard" sx={{ marginRight: 2 }}>

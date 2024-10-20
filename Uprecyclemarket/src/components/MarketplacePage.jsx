@@ -1,13 +1,38 @@
-import React from 'react';
-import { Typography, Button, Card, CardContent, CardActions, Grid, Container, TextField, Select, MenuItem, InputAdornment } from '@mui/material';
+import React, { useState } from 'react';
+import { Typography, Button, Card, CardContent, CardActions, Grid, Container, TextField, Select, MenuItem, InputAdornment, Box, Pagination } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { styled } from '@mui/system';
+
+const ZoomCard = styled(Card)(({ theme }) => ({
+  transition: 'transform 0.3s ease-in-out',
+  '&:hover': {
+    transform: 'scale(1.05)',
+  },
+}));
+
+const items = [
+  { title: 'Two small black recycling bins', location: 'New York, NY', date: '31 Oct 2024', image: 'https://example.com/image1.jpg' },
+  { title: 'Large brown/dark cardboard boxes', location: 'Los Angeles, CA', date: '30 Oct 2024', image: 'https://example.com/image2.jpg' },
+  { title: 'Plastic water bottles (100 pcs)', location: 'Chicago, IL', date: '29 Oct 2024', image: 'https://example.com/image3.jpg' },
+  { title: 'Metal cans for recycling', location: 'Houston, TX', date: '28 Oct 2024', image: 'https://example.com/image4.jpg' },
+  { title: 'Glass jars and bottles', location: 'Phoenix, AZ', date: '27 Oct 2024', image: 'https://example.com/image5.jpg' },
+  { title: 'Used paper for crafting', location: 'Philadelphia, PA', date: '26 Oct 2024', image: 'https://example.com/image6.jpg' },
+  { title: 'Aluminum foil rolls', location: 'San Antonio, TX', date: '25 Oct 2024', image: 'https://example.com/image7.jpg' },
+  { title: 'Recyclable plastic containers', location: 'San Diego, CA', date: '24 Oct 2024', image: 'https://example.com/image8.jpg' },
+];
 
 export default function MarketplacePage() {
+  const [page, setPage] = useState(1);
+
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
   return (
     <Container maxWidth="xl" sx={{ py: 4 }}>
-      <Typography variant="h3" component="h1" gutterBottom>
+      <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 'bold', color: '#2e7d32' }}>
         RecycleMarket
       </Typography>
       
@@ -32,6 +57,7 @@ export default function MarketplacePage() {
             <MenuItem value="plastic">Plastic</MenuItem>
             <MenuItem value="paper">Paper</MenuItem>
             <MenuItem value="metal">Metal</MenuItem>
+            <MenuItem value="glass">Glass</MenuItem>
           </Select>
         </Grid>
         <Grid item xs={12} md={2}>
@@ -48,23 +74,24 @@ export default function MarketplacePage() {
         </Grid>
       </Grid>
 
-      <Typography variant="h6" sx={{ mb: 2 }}>
-        Results: 310 Listings
+      <Typography variant="h6" sx={{ mb: 2, fontWeight: 'bold' }}>
+        Results: {items.length} Listings
       </Typography>
 
       <Grid container spacing={3}>
-        {[1, 2, 3, 4].map((item) => (
-          <Grid item xs={12} sm={6} md={3} key={item}>
-            <Card>
+        {items.map((item, index) => (
+          <Grid item xs={12} sm={6} md={3} key={index}>
+            <ZoomCard>
+              <Box sx={{ height: 200, backgroundImage: `url(${item.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
               <CardContent>
-                <Typography variant="h6" component="div" gutterBottom>
-                  {item === 1 ? 'Two small black r...' : 'Large brown/dark...'}
+                <Typography variant="h6" component="div" gutterBottom sx={{ fontWeight: 'bold' }} color="white">
+                  {item.title}
                 </Typography>
-                <Typography color="text.secondary" gutterBottom>
-                  <LocationOnIcon fontSize="small" /> {item === 1 ? 'xyz' : 'Location'}
+                <Typography gutterBottom color="yellow">
+                  <LocationOnIcon fontSize="small" /> {item.location}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Uploaded: 31 Oct 2024
+                <Typography variant="body2" color="white">
+                  Uploaded: {item.date}
                 </Typography>
               </CardContent>
               <CardActions>
@@ -75,10 +102,26 @@ export default function MarketplacePage() {
                   Contact Seller
                 </Button>
               </CardActions>
-            </Card>
+            </ZoomCard>
           </Grid>
         ))}
       </Grid>
+
+      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
+        <Pagination count={10} page={page} onChange={handleChangePage} color="primary" />
+      </Box>
+
+      <Box sx={{ mt: 6, mb: 4 }}>
+        <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', color: '#2e7d32' }}>
+          About RecycleMarket
+        </Typography>
+        <Typography variant="body1" paragraph>
+          RecycleMarket is your go-to platform for buying and selling recyclable materials. Our mission is to promote sustainable practices by connecting individuals and businesses in the recycling ecosystem.
+        </Typography>
+        <Typography variant="body1" paragraph>
+          Whether you're looking to dispose of recyclable items or source materials for your eco-friendly projects, RecycleMarket has got you covered. Join our community today and be part of the circular economy!
+        </Typography>
+      </Box>
     </Container>
   );
 }
