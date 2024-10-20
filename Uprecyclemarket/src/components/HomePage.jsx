@@ -18,7 +18,7 @@ const FeatureCard = ({ icon, title, description }) => (
 );
 
 const ImageCarousel = () => {
-  const images = ['/image1.jpg', '/image2.jpg', '/image3.jpg'];
+  const images = ['/image1.jpg', '/image2.jpg', '/image3.jpg','/image4.jpg','/image5.jpg'];
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -76,11 +76,11 @@ export default function HomePage() {
       <Container maxWidth="lg">
         <Grid container spacing={4} alignItems="center" sx={{ py: 8 }}>
           <Grid item xs={12} md={6}>
-            <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold', color: 'green' }}>
+            <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold', color: 'black' }}>
               Eco-friendly Solutions for a Sustainable Future
             </Typography>
             <Typography variant="h5" paragraph sx={{ fontWeight: 'bold', color: 'black' }}>
-              Powered by technology, the fture looks clean and green
+              Powered by technology, the future looks clean and green
             </Typography>
             <Button 
               variant="contained" 

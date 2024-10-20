@@ -6,16 +6,23 @@ import Navigation from './components/Navigation';
 import HomePage from './components/HomePage';
 import MarketplacePage from './components/MarketplacePage';
 import ScrapCollectionPage from './components/ScrapCollectionPage';
+import Dashboard from './components/Dashboard';
+import ProfilePage from './components/ProfilePage';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 const theme = createTheme({
   palette: {
+    mode: 'light',
     primary: {
       main: '#4caf50',
     },
     secondary: {
       main: '#2196f3',
+    },
+    background: {
+      default: '#ffffff',
+      paper: '#212121',
     },
   },
 });
@@ -32,6 +39,8 @@ export default function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/marketplace" element={<MarketplacePage />} />
               <Route path="/scrap-collection" element={<ScrapCollectionPage />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/profile" element={<ProfilePage />} />
             </Routes>
           </Box>
           <Box component="footer" bgcolor="primary.main" color="white" p={2} textAlign="center">
