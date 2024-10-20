@@ -1,0 +1,5 @@
+login : <a href="https://www.flaticon.com/free-icons/signup" title="signup icons">Signup icons created by Ghozi Muhtarom - Flaticon</a>
+recycle : <a href="https://www.flaticon.com/free-icons/scrap" title="scrap icons">Scrap icons created by Freepik - Flaticon</a>
+home : <a href="https://www.flaticon.com/free-icons/green-house" title="green-house icons">Green-house icons created by Andika Syaif - Flaticon</a>
+home2 : <a href="https://www.flaticon.com/free-icons/ecology-and-environment" title="ecology-and-environment icons">Ecology-and-environment icons created by Freepik - Flaticon</a>
+market : <a href="https://www.flaticon.com/free-icons/expand" title="expand icons">Expand icons created by noomtah - Flaticon</a>
