@@ -11,7 +11,7 @@ FEATURES:
   
 TECHNOLOGY STACK:
 -Frontend:
-  ...
+  HTML / CSS/ JAVASCRIPT
 -Backend:
   ...
 -APIs:
