@@ -49,7 +49,7 @@ export default function HomePage() {
     const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
 
-    const geometry = new THREE.SphereGeometry(1, 32, 32);
+    const geometry = new THREE.SphereGeometry(5, 40, 40);
     const material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true });
     const sphere = new THREE.Mesh(geometry, material);
     scene.add(sphere);
@@ -80,13 +80,14 @@ export default function HomePage() {
               Eco-friendly Solutions for a Sustainable Future
             </Typography>
             <Typography variant="h5" paragraph sx={{ fontWeight: 'bold', color: 'black' }}>
-              Powered by technology, the future looks clean and green
+              Powered by technology, the fture looks clean and green
             </Typography>
             <Button 
               variant="contained" 
               size="large" 
               startIcon={<RecycleIcon />}
               sx={{ bgcolor: '#ffd54f', color: 'black', '&:hover': { bgcolor: '#ffecb3' } }}
+           
             >
               Start Recycling Now
             </Button>
@@ -106,7 +107,8 @@ export default function HomePage() {
           </Grid>
           <Grid item xs={12} sm={4}>
             <FeatureCard 
-              icon={<NatureIcon sx={{ fontSize: 40, mb: 2, color: '#4caf50' }} />}
+              icon={<NatureIcon sx={{ fontSize: 40, mb: 2, color: 'black' }} />}
+              sx={{ bgcolor: '#ffd54f', color: 'black', '&:hover': { bgcolor: '#ffecb3' } }}
               title="Environmental Impact"
               description="Track your contribution to reducing carbon footprint"
             />
