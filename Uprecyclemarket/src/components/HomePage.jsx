@@ -92,7 +92,13 @@ export default function HomePage() {
               sx={{ bgcolor: '#ffd54f', color: 'black', '&:hover': { bgcolor: '#ffecb3' } }}
            
             >
-              Start Recycling Now
+              <a href="/scrap-collection"
+              style={{
+                color: 'inherit',      
+                textDecoration: 'none', 
+                cursor: 'default',    
+              }}> Start Recycling Now</a>
+              
             </Button>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -101,7 +107,7 @@ export default function HomePage() {
         </Grid>
 
         <Grid container spacing={4} sx={{ mt: 4 }}>
-  <Grid item xs={12} sm={4}>
+  {/* <Grid item xs={12} sm={4}>
     <FeatureCard 
       icon={<RecycleIcon sx={{ fontSize: 40, mb: 2, color: '#4caf50' }} />}
       title="Easy Recycling"
@@ -116,8 +122,8 @@ export default function HomePage() {
         }
       }}
     />
-  </Grid>
-  <Grid item xs={12} sm={4}>
+  </Grid> */}
+  {/* <Grid item xs={12} sm={4}>
     <FeatureCard 
       icon={<NatureIcon sx={{ fontSize: 40, mb: 2, color: '#4caf50' }} />}
       title="Environmental Impact"
@@ -132,8 +138,8 @@ export default function HomePage() {
         }
       }}
     />
-  </Grid>
-  <Grid item xs={12} sm={4}>
+  </Grid> */}
+  {/* <Grid item xs={12} sm={4}>
     <FeatureCard 
       icon={<SavingsIcon sx={{ fontSize: 40, mb: 2, color: '#4caf50' }} />}
       title="Rewards Program"
@@ -148,7 +154,7 @@ export default function HomePage() {
         }
       }}
     />
-  </Grid>
+  </Grid> */}
 </Grid>
 
       </Container>
