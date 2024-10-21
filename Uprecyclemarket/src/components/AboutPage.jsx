@@ -122,7 +122,7 @@ export default function AboutPage() {
             >
               <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                 <img
-                  src="/placeholder.svg?height=400&width=400"
+                 src="/public/logo.png?height=400&width=400"
                   alt="ReEarth Mission"
                   style={{ maxWidth: '100%', height: 'auto', borderRadius: '50%', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}
                 />
