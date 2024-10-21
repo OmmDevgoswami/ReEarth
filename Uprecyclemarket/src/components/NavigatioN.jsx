@@ -10,7 +10,8 @@ import Button from '@mui/material/Button';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import PersonIcon from '@mui/icons-material/Person';
-import InfoIcon from '@mui/icons-material/Info'
+import InfoIcon from '@mui/icons-material/Info';
+import LoginIcon from '@mui/icons-material/Login'
 
 export default function Navigation() {
   const { user } = useContext(AuthContext);
