@@ -37,11 +37,12 @@ function Register() {
   };
 
   return (
-    <form onSubmit={handleRegister}>
-      <h3>Sign Up</h3>
-
-      <div className="mb-3">
-        <label>First name</label>
+<div className="d-flex justify-content-center align-items-center" style={{ height: '100vh', width: '70vh', marginLeft : '35%'}}>
+    <form onSubmit={handleRegister} className="row g-3 needs-validation" noValidate>
+      {/* Name Field */}
+      <div className="col-md-12">
+        <label className="form-label">First Name</label>
+        <div>
         <input
           type="text"
           className="form-control"
@@ -49,20 +50,23 @@ function Register() {
           onChange={(e) => setFname(e.target.value)}
           required
         />
+        </div>
       </div>
-
-      <div className="mb-3">
-        <label>Last name</label>
+      <div className="col-md-12">
+        <label className="form-label">Last Name</label>
+        <div>
         <input
-          type="text"
-          className="form-control"
-          placeholder="Last name"
-          onChange={(e) => setLname(e.target.value)}
+            type="text"
+            className="form-control"
+            placeholder="Last name"
+            onChange={(e) => setLname(e.target.value)}
         />
+        </div>
       </div>
-
-      <div className="mb-3">
-        <label>Email address</label>
+      
+      <div className="col-md-12">
+        <label className="form-label">Email</label>
+        <div>
         <input
           type="email"
           className="form-control"
@@ -70,10 +74,12 @@ function Register() {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
+        </div>
       </div>
 
-      <div className="mb-3">
-        <label>Password</label>
+      <div className="col-md-12">
+        <label className="form-label">Passowrd</label>
+        <div>
         <input
           type="password"
           className="form-control"
@@ -81,17 +87,20 @@ function Register() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
+        </div>
+      </div>
+      
+      {/* Submit Button */}
+      <div className="col-12 d-flex justify-content-center">
+        <button className="btn btn-success " type="submit">Submit form</button>
       </div>
 
-      <div className="d-grid">
-        <button type="submit" className="btn btn-primary">
-          Sign Up
-        </button>
+      <div className="col-12 d-flex justify-content-center">
+      Already registered <a href="/login">Login</a>
       </div>
-      <p className="forgot-password text-right">
-        Already registered <a href="/login">Login</a>
-      </p>
     </form>
+</div>
+
   );
 }
 export default Register;
