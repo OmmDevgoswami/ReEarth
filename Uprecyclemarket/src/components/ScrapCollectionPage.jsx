@@ -3,6 +3,7 @@ import { Typography, Button, Box, Container, Grid, Card, CardContent } from '@mu
 import RecyclingOutlinedIcon from '@mui/icons-material/RecyclingOutlined';
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import AttachMoneyOutlinedIcon from '@mui/icons-material/AttachMoneyOutlined';
+import { useNavigate } from 'react-router-dom';
 
 const ImageCarousel = () => {
   const images = ['/Scrap collection process.jpeg', '/scap colletcion process 1.jpg', '/scrap collection process 2.jpg'];
@@ -28,11 +29,17 @@ const ImageCarousel = () => {
 };
 
 export default function ScrapCollectionPage() {
+  const navigate = useNavigate();
+
   const steps = [
     { icon: <RecyclingOutlinedIcon fontSize="large" />, title: 'Collect', description: 'Gather your recyclable materials' },
     { icon: <LocalShippingOutlinedIcon fontSize="large" />, title: 'Schedule', description: 'Book a pickup at your convenience' },
     { icon: <AttachMoneyOutlinedIcon fontSize="large" />, title: 'Earn', description: 'Get paid for your recyclables' },
   ];
+
+  const handleStartRecycling = () => {
+    navigate('/add-scrap-images');
+  };
 
   return (
     <Box sx={{ bgcolor: '#e8f5e9', py: 8 }}>
@@ -46,7 +53,13 @@ export default function ScrapCollectionPage() {
               Join the green revolution. Sell your recyclable waste and make a positive impact on the environment.
             </Typography>
             <Box sx={{ '& > :not(style)': { mr: 2, mb: 2 } }}>
-              <Button variant="contained" color="primary" size="large" startIcon={<RecyclingOutlinedIcon />}>
+              <Button 
+                variant="contained" 
+                color="primary" 
+                size="large" 
+                startIcon={<RecyclingOutlinedIcon />}
+                onClick={handleStartRecycling}
+              >
                 Start Recycling Now
               </Button>
               <Button variant="outlined" color="primary" size="large">
