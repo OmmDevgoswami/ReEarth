@@ -34,9 +34,9 @@ const developers = [
   },
   {
     name: "Wahid Patel",
-    role: "Begineer Developer",
-    photo: "/placeholder.svg?height=150&width=150",
-    linkedin: "https://www.linkedin.com/in/xyz",
+    role: "Junior Front-End Developer",
+    photo: "https://img.freepik.com/photos-premium/arriere-plan-abstrait-du-logiciel-developpement-du-code-javascript-react-code-js-arriere-fond-leger-ar-1_343960-115292.jpg?ga=GA1.1.2052945652.1729532449&semt=ais_hybrid",
+    linkedin: "https://www.linkedin.com/in/wah-pat-26a268284/",
     github: "https://github.com/Patwa974",
     email: "wahpat974@gmail.com"
   },
@@ -51,7 +51,7 @@ const developers = [
   {
     name: "Omm Devgoswami",
     role: "Python Developer // UI-Designer",
-    photo: "https://drive.google.com/file/d/1LtdL1aylF6365Jz9QUT-Gpc0sPHcqCvQ/view?usp=sharing",
+    photo: "",
     linkedin: "https://www.linkedin.com/in/omm-devgoswami-86a561214/",
     github: "https://github.com/OmmDevgoswami",
     email: "teamuniverse.omm@gmail.com"
