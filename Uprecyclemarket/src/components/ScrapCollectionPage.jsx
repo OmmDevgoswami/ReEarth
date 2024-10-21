@@ -6,7 +6,7 @@ import AttachMoneyOutlinedIcon from '@mui/icons-material/AttachMoneyOutlined';
 import { useNavigate } from 'react-router-dom';
 
 const ImageCarousel = () => {
-  const images = ['/Scrap collection process.jpeg', '/scap colletcion process 1.jpg', '/scrap collection process 2.jpg'];
+  const images = ['/scrap1.jpeg', '/scrap2.jpg', '/scrap3.jpg'];
   const [currentImage, setCurrentImage] = React.useState(0);
 
   React.useEffect(() => {
