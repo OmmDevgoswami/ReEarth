@@ -19,6 +19,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AuthProvider } from './components/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import StoreImageTextFirebase from './components/AddImages';
+import Footer from './components/Footer';
 
 const theme = createTheme({
   palette: {
@@ -75,6 +76,7 @@ export default function App() {
           <Box component="footer" bgcolor="primary.main" color="white" p={2} textAlign="center">
             <Typography variant="body2">
               © 2024 RecycleMarketplace. All rights reserved.
+              <Footer />
             </Typography>
           </Box>
         </Box>
