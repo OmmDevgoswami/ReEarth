@@ -18,7 +18,7 @@ const FeatureCard = ({ icon, title, description }) => (
 );
 
 const ImageCarousel = () => {
-  const images = ['/image1.jpg', '/image2.jpg', '/image3.jpg','/image4.jpg','/image5.jpg'];
+  const images = ['/image1.jpg', '/image2.jpg', '/image3.jpg','/image4.jpg'];
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -79,8 +79,11 @@ export default function HomePage() {
             <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold', color: 'black' }}>
               Eco-friendly Solutions for a Sustainable Future
             </Typography>
-            <Typography variant="h5" paragraph sx={{ fontWeight: 'bold', color: 'black' }}>
-              Powered by technology, the future looks clean and green
+            <Typography variant="h6" paragraph sx={{ fontWeight: 'bold', color: 'black', marginTop: '-30px', marginBottom: '40',}}>
+            -Powered by technology
+            </Typography>
+            <Typography variant="h5" paragraph sx={{ fontWeight: 'bold', color: 'black', marginTop: '60px'}}>
+            Contribution Today to Make the Future looks Clean and Green
             </Typography>
             <Button 
               variant="contained" 

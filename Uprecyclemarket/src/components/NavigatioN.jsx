@@ -10,6 +10,7 @@ import Button from '@mui/material/Button';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import PersonIcon from '@mui/icons-material/Person';
+import InfoIcon from '@mui/icons-material/Info'
 
 export default function Navigation() {
   const { user } = useContext(AuthContext);
@@ -25,6 +26,7 @@ export default function Navigation() {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <img src="./src/assets/planet-earth.png" alt="Sell" style={{ width: 24, height: 24, marginRight: 8 }} />
           ReEarth
         </Typography>
         <Button color="inherit" component={RouterLink} to="/" sx={{ marginRight: 2 }}>
@@ -50,25 +52,23 @@ export default function Navigation() {
         </Button>
         {user ? (
         <>
-          <Button color="inherit" component={RouterLink} to="/profile">
-            <PersonIcon sx={{ marginRight: 1 }} />
-            Profile
-          </Button>
           <Button color="inherit" onClick={handleLogout}>
+          <img src="./src/assets/logout.png" alt="Profile" style={{ width: 24, height: 24, marginRight: 8 }} />
             Logout
           </Button>
         </>):(
            <Button color="inherit" component={RouterLink} to="/login">
+            <img src="./src/assets/login_1.png" alt="Profile" style={{ width: 24, height: 24, marginRight: 8 }} />
            Login
          </Button>
         )
         }
         <Button color="inherit" component={RouterLink} to="/contact">
-          <ContactMailIcon sx={{ marginRight: 1 }} />
+        <img src="./src/assets/contact.png" alt="Countact" style={{ width: 24, height: 24, marginRight: 8 }} />
           Contact
         </Button>
          <Button color="inherit" component={RouterLink} to="/about" sx={{ marginRight: 2 }}>
-          <InfoIcon sx={{ marginRight: 1 }} />
+          <img src="./src/assets/about.png" alt="About" style={{ width: 24, height: 24, marginRight: 8 }} />
           About
         </Button>
       </Toolbar>

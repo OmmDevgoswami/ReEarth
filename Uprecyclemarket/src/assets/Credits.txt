@@ -7,3 +7,8 @@ dashboard : <a href="https://www.flaticon.com/free-icons/panel" title="panel ico
 user : <a href="https://www.flaticon.com/free-animated-icons/ui" title="ui animated icons">Ui animated icons created by Freepik - Flaticon</a>
 login : <a href="https://www.flaticon.com/free-icons/login" title="login icons">Login icons created by HJ Studio - Flaticon</a>
 logo : <a href="https://www.flaticon.com/free-animated-icons/ecosystem" title="ecosystem animated icons">Ecosystem animated icons created by Freepik - Flaticon</a>
+contacts :  <a href="https://www.flaticon.com/free-icons/contact" title="contact icons">Contact icons created by Eucalyp - Flaticon</a>
+about : <a href="https://www.flaticon.com/free-icons/information" title="information icons">Information icons created by Freepik - Flaticon</a>
+earth : <a href="https://www.flaticon.com/free-icons/sustainability" title="sustainability icons">Sustainability icons created by Freepik - Flaticon</a>
+logout : <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by Freepik - Flaticon</a>
+login_1 : <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by Freepik - Flaticon</a>
