@@ -49,12 +49,12 @@ const developers = [
     email: "ayushrai200605@gmail.com"
   },
   {
-    name: "xyz",
-    role: "Full Stack Developer",
-    photo: "/placeholder.svg?height=150&width=150",
-    linkedin: "https://www.linkedin.com/in/xyz",
-    github: "https://github.com/xyz",
-    email: "xyz@example.com"
+    name: "Omm Devgoswami",
+    role: "Python Developer // UI-Designer",
+    photo: "https://drive.google.com/file/d/1LtdL1aylF6365Jz9QUT-Gpc0sPHcqCvQ/view?usp=sharing",
+    linkedin: "https://www.linkedin.com/in/omm-devgoswami-86a561214/",
+    github: "https://github.com/OmmDevgoswami",
+    email: "teamuniverse.omm@gmail.com"
   },
 ];
 
