@@ -34,7 +34,7 @@ const developers = [
   },
   {
     name: "Wahid Patel",
-    role: "Junior Front-End Developer",
+    role: "Front-End Developer //UI Designer",
     photo: "https://img.freepik.com/photos-premium/arriere-plan-abstrait-du-logiciel-developpement-du-code-javascript-react-code-js-arriere-fond-leger-ar-1_343960-115292.jpg?ga=GA1.1.2052945652.1729532449&semt=ais_hybrid",
     linkedin: "https://www.linkedin.com/in/wah-pat-26a268284/",
     github: "https://github.com/Patwa974",
