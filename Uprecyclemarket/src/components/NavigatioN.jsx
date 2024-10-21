@@ -67,6 +67,10 @@ export default function Navigation() {
           <ContactMailIcon sx={{ marginRight: 1 }} />
           Contact
         </Button>
+         <Button color="inherit" component={RouterLink} to="/about" sx={{ marginRight: 2 }}>
+          <InfoIcon sx={{ marginRight: 1 }} />
+          About
+        </Button>
       </Toolbar>
     </AppBar>
   );
