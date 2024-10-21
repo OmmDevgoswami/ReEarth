@@ -32,9 +32,24 @@ export default function ScrapCollectionPage() {
   const navigate = useNavigate();
 
   const steps = [
-    { icon: <RecyclingOutlinedIcon fontSize="large" />, title: 'Collect', description: 'Gather your recyclable materials' },
-    { icon: <LocalShippingOutlinedIcon fontSize="large" />, title: 'Schedule', description: 'Book a pickup at your convenience' },
-    { icon: <AttachMoneyOutlinedIcon fontSize="large" />, title: 'Earn', description: 'Get paid for your recyclables' },
+    { 
+      icon: <RecyclingOutlinedIcon fontSize="large" />, 
+      title: 'Collect', 
+      description: 'Gather your recyclable materials',
+      image: './public/gathering.jpg' // Add the image path here
+    },
+    { 
+      icon: <LocalShippingOutlinedIcon fontSize="large" />, 
+      title: 'Schedule', 
+      description: 'Book a pickup at your convenience',
+      image: './public/garbagetruck.jpg' // Add the image path here
+    },
+    { 
+      icon: <AttachMoneyOutlinedIcon fontSize="large" />, 
+      title: 'Earn', 
+      description: 'Get paid for your recyclables',
+      image: './public/paid1.jpg' // Add the image path here
+    },
   ];
 
   const handleStartRecycling = () => {
@@ -79,15 +94,38 @@ export default function ScrapCollectionPage() {
           <Grid container spacing={4}>
             {steps.map((step, index) => (
               <Grid item xs={12} sm={6} md={3} key={index}>
-                <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
+                <Card sx={{ 
+                    height: '100%', 
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    alignItems: 'center', 
+                    p: 2,
+                    bgcolor: '#dcedc8', // Light green background color
+                    '&:hover': { 
+                      bgcolor: '#c5e1a5', // Darker green on hover
+                    },
+                  }}>
+                  {/* Image box */}
+                  <Box 
+                    component="img"
+                    src={step.image} // Add image source here
+                    alt={step.title}
+                    sx={{
+                      width: '100%',
+                      height: '150px', // Adjust height as needed
+                      objectFit: 'cover',
+                      mb: 2,
+                      borderRadius: '8px', // Optional: adds rounded corners
+                    }}
+                  />
                   <Box sx={{ color: 'primary.main', mb: 2 }}>
                     {step.icon}
                   </Box>
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div" align="center" color="white">
+                    <Typography gutterBottom variant="h5" component="div" align="center" color="black">
                       {step.title}
                     </Typography>
-                    <Typography variant="body2" color="white" align="center">
+                    <Typography variant="body2" color="black" align="center">
                       {step.description}
                     </Typography>
                   </CardContent>

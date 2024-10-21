@@ -27,10 +27,11 @@ const FeatureBox = ({ title, description, icon }) => {
           justifyContent: 'center',
           alignItems: 'center',
           textAlign: 'center',
-          bgcolor: 'background.paper',
+          bgcolor: '#dcedc8',
           borderRadius: 4,
           transition: 'all 0.3s ease-in-out',
           '&:hover': {
+            bgcolor: '#c5e1a5',
             boxShadow: theme.shadows[10],
             transform: 'translateY(-5px)',
           },

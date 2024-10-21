@@ -51,7 +51,7 @@ const developers = [
   {
     name: "Omm Devgoswami",
     role: "Python Developer // UI-Designer",
-    photo: "https://drive.google.com/file/d/1LtdL1aylF6365Jz9QUT-Gpc0sPHcqCvQ/view?usp=sharing",
+    photo: "https://res.cloudinary.com/deuwunijk/image/upload/v1729536372/Logo_zlyq8q.png",
     linkedin: "https://www.linkedin.com/in/omm-devgoswami-86a561214/",
     github: "https://github.com/OmmDevgoswami",
     email: "teamuniverse.omm@gmail.com"

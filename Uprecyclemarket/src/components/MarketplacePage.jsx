@@ -13,14 +13,14 @@ const ZoomCard = styled(Card)(({ theme }) => ({
 }));
 
 const items = [
-  { title: 'Two small black recycling bins', location: 'New York, NY', date: '31 Oct 2024', image: 'https://example.com/image1.jpg' },
-  { title: 'Large brown/dark cardboard boxes', location: 'Los Angeles, CA', date: '30 Oct 2024', image: 'https://example.com/image2.jpg' },
-  { title: 'Plastic water bottles (100 pcs)', location: 'Chicago, IL', date: '29 Oct 2024', image: 'https://example.com/image3.jpg' },
-  { title: 'Metal cans for recycling', location: 'Houston, TX', date: '28 Oct 2024', image: 'https://example.com/image4.jpg' },
-  { title: 'Glass jars and bottles', location: 'Phoenix, AZ', date: '27 Oct 2024', image: 'https://example.com/image5.jpg' },
-  { title: 'Used paper for crafting', location: 'Philadelphia, PA', date: '26 Oct 2024', image: 'https://example.com/image6.jpg' },
-  { title: 'Aluminum foil rolls', location: 'San Antonio, TX', date: '25 Oct 2024', image: 'https://example.com/image7.jpg' },
-  { title: 'Recyclable plastic containers', location: 'San Diego, CA', date: '24 Oct 2024', image: 'https://example.com/image8.jpg' },
+  { title: 'Two small black recycling bins', location: 'New York, NY', date: '31 Oct 2024', image: './public/bins.jpg' },
+  { title: 'Large brown cardboard boxes', location: 'Los Angeles, CA', date: '30 Oct 2024', image: './public/boxes.jpeg' },
+  { title: 'Plastic water bottles (100 pcs)', location: 'Chicago, IL', date: '29 Oct 2024', image: './public/100bottles.jpg' },
+  { title: 'Metal cans for recycling', location: 'Houston, TX', date: '28 Oct 2024', image: './public/cans.jpg' },
+  { title: 'Glass jars and bottles', location: 'Phoenix, AZ', date: '27 Oct 2024', image: './public/glass.jpg' },
+  { title: 'Used paper for crafting', location: 'Philadelphia, PA', date: '26 Oct 2024', image: './public/paper.jpg' },
+  { title: 'Aluminum foil rolls', location: 'San Antonio, TX', date: '25 Oct 2024', image: './public/aluminium.jpg' },
+  { title: 'Recyclable plastic containers', location: 'San Diego, CA', date: '24 Oct 2024', image: './public/plasticcontainer.jpg' },
 ];
 
 export default function MarketplacePage() {
@@ -52,7 +52,34 @@ export default function MarketplacePage() {
           />
         </Grid>
         <Grid item xs={12} md={2}>
-          <Select fullWidth defaultValue="" displayEmpty>
+          <Select fullWidth defaultValue="" displayEmpty
+          sx={{
+            bgcolor: '	#90EE90', // Change background color
+            color: '#2e7d32', // Change text color
+            '& .MuiSelect-icon': {
+              color: '#2e7d32', // Change dropdown arrow color
+            },
+            '&:before': {
+              borderColor: '#2e7d32', // Change border color when not focused
+            },
+            '&:after': {
+              borderColor: '#2e7d32', // Change border color when focused
+            },
+          }}
+          MenuProps={{
+            PaperProps: {
+              sx: {
+                bgcolor: '	#90EE90', // Change dropdown menu background color
+                '& .MuiMenuItem-root': {
+                  color: '#2e7d32', // Change dropdown item text color
+                  '&:hover': {
+                    backgroundColor: '#66bb6a', // Change background color on hover
+                  },
+                },
+              },
+            },
+          }}
+        >
             <MenuItem value="" disabled>Category</MenuItem>
             <MenuItem value="plastic">Plastic</MenuItem>
             <MenuItem value="paper">Paper</MenuItem>
@@ -61,7 +88,33 @@ export default function MarketplacePage() {
           </Select>
         </Grid>
         <Grid item xs={12} md={2}>
-          <Select fullWidth defaultValue="" displayEmpty>
+          <Select fullWidth defaultValue="" displayEmpty
+          sx={{
+            bgcolor: '	#90EE90', // Change background color
+            color: '#2e7d32', // Change text color
+            '& .MuiSelect-icon': {
+              color: '#2e7d32', // Change dropdown arrow color
+            },
+            '&:before': {
+              borderColor: '#2e7d32', // Change border color when not focused
+            },
+            '&:after': {
+              borderColor: '#2e7d32', // Change border color when focused
+            },
+          }}
+          MenuProps={{
+            PaperProps: {
+              sx: {
+                bgcolor: '	#90EE90', // Change dropdown menu background color
+                '& .MuiMenuItem-root': {
+                  color: '#2e7d32', // Change dropdown item text color
+                  '&:hover': {
+                    backgroundColor: '#66bb6a', // Change background color on hover
+                  },
+                },
+              },
+            },
+          }}>
             <MenuItem value="" disabled>Condition</MenuItem>
             <MenuItem value="new">New</MenuItem>
             <MenuItem value="used">Used</MenuItem>
