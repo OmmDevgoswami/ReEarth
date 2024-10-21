@@ -4,8 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import PersonIcon from '@mui/icons-material/Person';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
 
 export default function Navigation() {
   return (
@@ -15,7 +14,7 @@ export default function Navigation() {
           ReEarth
         </Typography>
         <Button color="inherit" component={RouterLink} to="/" sx={{ marginRight: 2 }}>
-          <img src="./src/assets/home.png" alt="Logo" style={{ width: 24, height: 24, marginRight: 8 }} />
+          <img src="./src/assets/home.png" alt="Home" style={{ width: 24, height: 24, marginRight: 8 }} />
           Home
         </Button>
         <Button color="inherit" component={RouterLink} to="/marketplace" sx={{ marginRight: 2 }}>
@@ -27,12 +26,16 @@ export default function Navigation() {
           Sell Scrap
         </Button>
         <Button color="inherit" component={RouterLink} to="/dashboard" sx={{ marginRight: 2 }}>
-          <img src="./src/assets/dashboard.png" alt="Logo" style={{ width: 24, height: 24, marginRight: 8 }} />
+          <img src="./src/assets/dashboard.png" alt="Dashboard" style={{ width: 24, height: 24, marginRight: 8 }} />
           Dashboard
         </Button>
-        <Button color="inherit" component={RouterLink} to="/profile">
-          <img src="./src/assets/login.png" alt="Logo" style={{ width: 24, height: 24, marginRight: 8 }} />
+        <Button color="inherit" component={RouterLink} to="/profile" sx={{ marginRight: 2 }}>
+          <img src="./src/assets/login.png" alt="Profile" style={{ width: 24, height: 24, marginRight: 8 }} />
           Profile
+        </Button>
+        <Button color="inherit" component={RouterLink} to="/contact">
+          <ContactMailIcon sx={{ marginRight: 1 }} />
+          Contact
         </Button>
       </Toolbar>
     </AppBar>

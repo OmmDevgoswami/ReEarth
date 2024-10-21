@@ -8,6 +8,7 @@ import MarketplacePage from './components/MarketplacePage';
 import ScrapCollectionPage from './components/ScrapCollectionPage';
 import Dashboard from './components/Dashboard';
 import ProfilePage from './components/ProfilePage';
+import ContactPage from './components/ContactPage';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
@@ -41,6 +42,7 @@ export default function App() {
               <Route path="/scrap-collection" element={<ScrapCollectionPage />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/profile" element={<ProfilePage />} />
+              <Route path="/contact" element={<ContactPage />} />
             </Routes>
           </Box>
           <Box component="footer" bgcolor="primary.main" color="white" p={2} textAlign="center">
