@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from './AuthContext';
+import { signOut } from 'firebase/auth';
+import { auth } from './firebase';
 import { Link as RouterLink } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import DashboardIcon from '@mui/icons-material/Dashboard';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
+import PersonIcon from '@mui/icons-material/Person';
 
 export default function Navigation() {
+  const { user } = useContext(AuthContext);
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+    } catch (error) {
+      console.error('Error signing out: ', error);
+    }
+  };
   return (
     <AppBar position="static">
       <Toolbar>
@@ -29,10 +43,26 @@ export default function Navigation() {
           <img src="./src/assets/dashboard.png" alt="Dashboard" style={{ width: 24, height: 24, marginRight: 8 }} />
           Dashboard
         </Button>
+        
         <Button color="inherit" component={RouterLink} to="/profile" sx={{ marginRight: 2 }}>
           <img src="./src/assets/login.png" alt="Profile" style={{ width: 24, height: 24, marginRight: 8 }} />
           Profile
         </Button>
+        {user ? (
+        <>
+          <Button color="inherit" component={RouterLink} to="/profile">
+            <PersonIcon sx={{ marginRight: 1 }} />
+            Profile
+          </Button>
+          <Button color="inherit" onClick={handleLogout}>
+            Logout
+          </Button>
+        </>):(
+           <Button color="inherit" component={RouterLink} to="/login">
+           Login
+         </Button>
+        )
+        }
         <Button color="inherit" component={RouterLink} to="/contact">
           <ContactMailIcon sx={{ marginRight: 1 }} />
           Contact
