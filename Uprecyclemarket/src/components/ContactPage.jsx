@@ -33,12 +33,12 @@ const developers = [
     email: "llawlietbagsum@gmail.com"
   },
   {
-    name: "xyz",
-    role: "Full Stack Developer",
+    name: "Wahid Patel",
+    role: "Begineer Developer",
     photo: "/placeholder.svg?height=150&width=150",
     linkedin: "https://www.linkedin.com/in/xyz",
-    github: "https://github.com/xyz",
-    email: "xyz@example.com"
+    github: "https://github.com/Patwa974",
+    email: "wahpat974@gmail.com"
   },
   {
     name: "xyz",
