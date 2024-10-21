@@ -41,12 +41,12 @@ const developers = [
     email: "wahpat974@gmail.com"
   },
   {
-    name: "xyz",
-    role: "Full Stack Developer",
-    photo: "/placeholder.svg?height=150&width=150",
-    linkedin: "https://www.linkedin.com/in/xyz",
-    github: "https://github.com/xyz",
-    email: "xyz@example.com"
+    name: "Ayush Rai",
+    role: "Full Stack// ML Developer",
+    photo: "https://media.licdn.com/dms/image/v2/D4E03AQEVKr7Vl7BPtw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728626729840?e=1735171200&v=beta&t=mjBiUwSbMuKGrlJYKpBLbUyAGVMJbBI-CQc8_0-_sIA",
+    linkedin: "https://www.linkedin.com/in/ayush-rai-35bb64328/",
+    github: "https://github.com/ayushrai1235",
+    email: "ayushrai200605@gmail.com"
   },
   {
     name: "xyz",
