@@ -4,6 +4,29 @@ import RecyclingOutlinedIcon from '@mui/icons-material/RecyclingOutlined';
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import AttachMoneyOutlinedIcon from '@mui/icons-material/AttachMoneyOutlined';
 
+const ImageCarousel = () => {
+  const images = ['/Scrap collection process.jpeg', '/scap colletcion process 1.jpg', '/scrap collection process 2.jpg'];
+  const [currentImage, setCurrentImage] = React.useState(0);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 5000); 
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <Box sx={{ width: '100%', height: '300px', overflow: 'hidden' }}>
+      <img
+        src={images[currentImage]}
+        alt="Carousel"
+        style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'opacity 0.5s ease-in-out' }}
+      />
+    </Box>
+  );
+};
+
 export default function ScrapCollectionPage() {
   const steps = [
     { icon: <RecyclingOutlinedIcon fontSize="large" />, title: 'Collect', description: 'Gather your recyclable materials' },
