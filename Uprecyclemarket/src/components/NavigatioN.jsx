@@ -12,7 +12,7 @@ export default function Navigation() {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          RecycleMarketplace
+          ReEarth
         </Typography>
         <Button color="inherit" component={RouterLink} to="/" sx={{ marginRight: 2 }}>
           <img src="./src/assets/home.png" alt="Logo" style={{ width: 24, height: 24, marginRight: 8 }} />
