@@ -29,12 +29,12 @@ function SignInwithGoogle() {
   }
   return (
     <div>
-      <p className="continue-p">--Or continue with--</p>
+      {/* <p className="continue-p">--Or continue with--</p> */}
       <div
         style={{ display: "flex", justifyContent: "center", cursor: "pointer" }}
         onClick={googleLogin}
       >
-        <img src={("./src/google.png")} width={"15%"} alt="Google Login"/>
+        <img src={("./src/google.png")} width={"40%"} alt="Google Login"/>
       </div>
     </div>
   );

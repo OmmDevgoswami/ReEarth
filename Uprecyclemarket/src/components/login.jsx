@@ -51,6 +51,9 @@ function Login() {
   return (
     <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh', width: '70vh', marginLeft : '35%' }} id="outer">
       <form onSubmit={handleSubmit} className="row g-3 needs-validation" noValidate>
+      <div className="col-12 d-flex justify-content-center">
+        <button type="button" className="btn btn-success btn-lg" disabled> Log-In </button>
+        </div>
         {/* Email Field */}
         <div className="col-md-12">
           <label htmlFor="validationCustomUsername" className="form-label">Email</label>
@@ -95,7 +98,9 @@ function Login() {
         <div className="col-12 d-flex justify-content-center">
           New user? <a href="/register"> Register Here</a>
         </div>
-
+        <div className="col-12 d-flex justify-content-center">
+        --Or continue with--
+        </div>
         <div className="col-12 d-flex justify-content-center">
           {/* Google Sign-In */}
           <SignInwithGoogle />

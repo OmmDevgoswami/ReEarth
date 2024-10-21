@@ -59,6 +59,9 @@ function Register() {
   return (
     <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh', width: '70vh', marginLeft: '35%' }}>
       <form onSubmit={handleRegister} className="row g-3 needs-validation" noValidate>
+      <div className="col-12 d-flex justify-content-center">
+        <button type="button" className="btn btn-success btn-lg" disabled> Sign-Up </button>
+        </div>
         {/* First Name Field */}
         <div className="col-md-12">
           <label className="form-label">First Name</label>
