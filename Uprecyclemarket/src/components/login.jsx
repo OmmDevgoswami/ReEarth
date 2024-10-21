@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import { auth } from "./firebase";
 import { toast } from "react-toastify";
 import SignInwithGoogle from "./signInWIthGoogle";
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -13,7 +15,7 @@ function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User logged in Successfully");
-      window.location.href = "/profile";
+      navigate('/profile');
       toast.success("User logged in Successfully", {
         position: "top-center",
       });
@@ -24,11 +26,12 @@ function Login() {
         position: "bottom-center",
       });
     }
+    
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <h3>Login</h3>
+      <h2>Login</h2>
 
       <div className="mb-3">
         <label>Email address</label>
@@ -66,3 +69,4 @@ function Login() {
 }
 
 export default Login;
+
