@@ -2,7 +2,7 @@ import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth, db } from "./firebase";
 import { toast } from "react-toastify";
 import { setDoc, doc } from "firebase/firestore";
-import { GoogleButton } from 'react-google-button';
+// import { GoogleButton } from 'react-google-button';
 // import { UserAuth } from '../context/AuthContext';
 // import { useNavigate } from 'react-router-dom';
 
