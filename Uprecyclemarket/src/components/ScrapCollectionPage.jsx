@@ -68,19 +68,7 @@ export default function ScrapCollectionPage() {
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Box
-              component="img"
-              src="/scrap-collection.jpg"
-              alt="Scrap collection process"
-              sx={{
-                width: '100%',
-                height: 'auto',
-                maxHeight: '500px',
-                objectFit: 'cover',
-                borderRadius: 4,
-                boxShadow: 5,
-              }}
-            />
+          <ImageCarousel />
           </Grid>
         </Grid>
 
