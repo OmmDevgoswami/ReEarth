@@ -2,6 +2,10 @@ import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth, db } from "./firebase";
 import { toast } from "react-toastify";
 import { setDoc, doc } from "firebase/firestore";
+import { GoogleButton } from 'react-google-button';
+// import { UserAuth } from '../context/AuthContext';
+// import { useNavigate } from 'react-router-dom';
+
 
 function SignInwithGoogle() {
   function googleLogin() {
@@ -30,9 +34,10 @@ function SignInwithGoogle() {
         style={{ display: "flex", justifyContent: "center", cursor: "pointer" }}
         onClick={googleLogin}
       >
-        <img src={require("../google.png")} width={"60%"} />
+        <img src={("./src/google.png")} width={"15%"} alt="Google Login"/>
       </div>
     </div>
   );
 }
 export default SignInwithGoogle;
+
