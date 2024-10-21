@@ -10,7 +10,8 @@ import Dashboard from './components/Dashboard';
 import ProfilePage from './components/ProfilePage';
 import Login from './components/login';
 import Register from './components/register';
-// import ContactPage from './components/ContactPage';
+import ContactPage from './components/ContactPage';
+import AboutPage from './components/AboutPage';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { ToastContainer } from 'react-toastify';
@@ -58,7 +59,8 @@ export default function App() {
                   <ProfilePage />
                 </ProtectedRoute>
               } />
-              {/* <Route path="/contact" element={<ContactPage />} /> */}
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/about" element={<AboutPage />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/add-scrap-images" element={
