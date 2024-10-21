@@ -111,17 +111,6 @@ export default function MarketplacePage() {
         <Pagination count={10} page={page} onChange={handleChangePage} color="primary" />
       </Box>
 
-      <Box sx={{ mt: 6, mb: 4 }}>
-        <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', color: '#2e7d32' }}>
-          About RecycleMarket
-        </Typography>
-        <Typography variant="body1" paragraph>
-          RecycleMarket is your go-to platform for buying and selling recyclable materials. Our mission is to promote sustainable practices by connecting individuals and businesses in the recycling ecosystem.
-        </Typography>
-        <Typography variant="body1" paragraph>
-          Whether you're looking to dispose of recyclable items or source materials for your eco-friendly projects, RecycleMarket has got you covered. Join our community today and be part of the circular economy!
-        </Typography>
-      </Box>
-    </Container>
+     </Container>
   );
 }
