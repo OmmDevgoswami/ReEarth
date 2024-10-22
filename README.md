@@ -6,6 +6,7 @@
 ## PROBLEM SOLVING:
 Each year, millions of tons of reusable items are carelessly thrown away, exacerbating the crisis of overflowing landfills and `escalating pollution levels`. Many individuals possess valuable items that could serve others but lack the means or a platform to exchange, trade, or sell them effectively. This gap not only wastes resources but also contributes to a throwaway culture that harms our planet. `ReEarth addresses this critical issue by offering a seamless, user-friendly platform that facilitates the buying, selling, and trading of second-hand goods`. Our mission is to inspire a shift in mindset, encouraging people to see value in what they once considered waste. By empowering users to actively participate in the circular economy, we not only reduce waste but also promote `sustainability`, `community engagement`, and `responsible consumption`. 
 
+# This repository is a Contribution Under the HACK49 HACKATHON
 ![Hack49 Banner](https://www.hack49.com/images/og-image.png)
 
 ### FEATURES:
