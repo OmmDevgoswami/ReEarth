@@ -1,4 +1,6 @@
 # ReEarth: Turning Trash into Positive Impact
+# Deployment:
+https://reearthweb.netlify.app/
 
 ## DESCRIPTION:
 `ReEarth` is an innovative web application poised to transform waste management into a more efficient, sustainable, and user-friendly experience. Our platform empowers individuals, communities, and organizations to take charge of their waste by providing smart solutions and cutting-edge technology. `At ReEarth, we believe that waste is not just something to be discarded; it’s an opportunity for renewal`. Users can easily `sell` or `trade` items they no longer need, promoting `upcycling` and `fostering` a culture of creativity. By connecting communities and facilitating the exchange of second-hand goods, we aim to cultivate a circular economy where used items find new life, thereby significantly reducing landfill contributions and minimizing environmental impact.
