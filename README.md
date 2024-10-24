@@ -28,9 +28,9 @@ Each year, millions of tons of reusable items are carelessly thrown away, exacer
 ## TECHNOLOGY STACK:
 
 ---
-Frontend: [React,Vite,Vanilla-HTML,Vanilla-CSS,Javascrpit]
-Backend: [Firebase]
-APIs: [Firebase-API,Google-API]
+- Frontend: [React,Vite,Vanilla-HTML,Vanilla-CSS,Javascrpit]
+- Backend: [Firebase]
+- APIs: [Firebase-API,Google-API]
 ---
 
 ## INSTALLATION:
@@ -53,6 +53,9 @@ npm install
 npm run dev
 ```
 6. Simply CLick on `http://localhost:5173/` or Open your web browser and navigate to `http://localhost:5173/` to access the Site
+
+Track Our Progress Here : https://www.figma.com/design/RLHJcuGzIqu8ENvXAkwSer/ReEarth?node-id=0-1&t=hpoqQiDR84yrq3Xt-1
+Prototype :https://www.figma.com/proto/RLHJcuGzIqu8ENvXAkwSer/ReEarth?page-id=0%3A1&node-id=55-6&node-type=canvas&viewport=35996%2C30106%2C0.55&t=7J9gKBWsOoNmMeJ3-1&scaling=contain&content-scaling=fixed&starting-point-node-id=55%3A6&show-proto-sidebar=1
 
 ## Contributors ✨
 
